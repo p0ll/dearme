@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  resources :homes
+
+  resources :friends
+
   devise_for :users
   root "pages#home"
 
